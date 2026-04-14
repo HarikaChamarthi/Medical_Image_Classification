@@ -1,69 +1,107 @@
-# Medical Image Classification  
-*Deep-learning solution to classify medical images into healthy vs. diseased categories.*
+#  Medical Image Classification using CNN
 
-## 🔍 Project Overview  
-This project develops a convolutional neural network (CNN)-based classification system that takes medical images (e.g., X-ray, MRI, CT) as input and outputs predictions whether the image is **healthy** or **diseased**.  
-It is implemented in Python using popular libraries (e.g., TensorFlow / PyTorch, NumPy, etc.) and structured for ease of extension and deployment.
+##  Project Overview
 
-## 📁 Project Structure  
-Medical_Image_Classification/
+This project focuses on building an AI-powered medical imaging system to automatically detect **Pneumonia (Chest X-rays)** and **Brain Tumors (MRI scans)** using Convolutional Neural Networks (CNNs). It aims to assist healthcare professionals with faster and more accurate diagnosis.
 
-├─ uploads/ # raw image uploads or sample dataset (if included)
+---
 
-├─ app.py # main application script (inference / web interface)
+##  Objectives
 
-├─ app.spec # specification for packaging (if used)
+* Develop CNN models for medical image classification
+* Detect:
 
-├─ dashboard.html # (optional) web UI dashboard for monitoring / visualization
+  * Pneumonia from Chest X-rays
+  * Brain Tumors from MRI scans
+* Improve model performance using preprocessing & augmentation
+* Evaluate models using accuracy and loss metrics
+* Enable real-time prediction for new images
 
-├─ landing.html # homepage for the web interface
+## 🧠 Technologies Used
 
-├─ login.html # user login page (if access control)
+* Python
+* TensorFlow & Keras
+* Google Colab (GPU)
+* NumPy, Pandas
+* OpenCV, Pillow
+* Matplotlib, Seaborn
 
-├─ predict.html # front-end page to upload image and view prediction
+##  Dataset
 
-├─ register.html # user registration page (if applicable)
+* Chest X-ray dataset (NORMAL / PNEUMONIA)
+* Brain MRI dataset (Tumor / No Tumor)
+* Sources: Public datasets (Kaggle)
 
-└─ doctors.db # database for user/patient or model logging (if applicable)
+---
 
+##  System Workflow
 
+1. Data Collection
+2. Preprocessing & Augmentation
+3. CNN Model Design
+4. Training & Validation
+5. Model Evaluation
+6. Prediction
 
-🎯 Key Features
-------------------------------------------------------------------------------------------------------
+---
 
-CNN architecture optimized for medical image classification.
+##  Model Architecture
 
-User-friendly front-end (HTML pages) for image upload + real-time inference.
+* Conv2D + MaxPooling layers
+* Flatten layer
+* Dense layers with Dropout
+* Sigmoid activation (Binary Classification)
 
-Database logging of user uploads/predictions for audit / tracking (via doctors.db).
+---
 
-Modular code—easy to replace model, dataset or add more classes.
+##  Results
 
+| Model                   | Accuracy   |
+| ----------------------- | ---------- |
+| Chest X-ray (Pneumonia) | 93.67% |
+| Brain MRI (Tumor)       | 88.00% |
 
-📦 Libraries Used
-----------------------------------------------------------------------------------------
+* Strong generalization using data augmentation
+* Reduced overfitting with Dropout
+* Efficient training using GPU
 
-This project uses the following major Python libraries:
+---
 
-TensorFlow / Keras – for building and training the CNN model
+##  Features
 
-NumPy – for numerical operations
+* Automated disease detection
+* Real-time image prediction
+* Lightweight CNN architecture
+* Scalable for other diseases
 
-scikit-learn – for data splitting, evaluation metrics, and preprocessing
+---
 
-OpenCV (opencv-python) – for image loading and resizing
+##  Applications
 
-Flask – to create the web interface for uploading and classifying images
+* Clinical diagnosis support
+* Telemedicine systems
+* Public health screening
+* Medical education
 
-Matplotlib – for visualizing training accuracy and loss
+---
 
-SQLite3 – for storing user/doctor information in doctors.db
+##  Future Enhancements
 
+* Transfer Learning (VGG16, ResNet50)
+* Explainable AI (Grad-CAM)
+* Multi-disease detection
+* Web/Mobile deployment
+* Cloud integration
 
+---
 
-🧑‍💻 Author
---------------------------------------------------------------------------------
+##  Conclusion
 
-Harika Chamarthi
+This project demonstrates how deep learning can enhance medical diagnostics by improving accuracy, reducing workload, and enabling early disease detection. It highlights the potential of AI in transforming healthcare systems.
 
-Contact or check out my GitHub profile for more projects.
+---
+
+##  Author
+
+Chamarathi Harika
+B.Tech – CSE (Data Science)
