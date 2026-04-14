@@ -17,7 +17,7 @@ This project focuses on building an AI-powered medical imaging system to automat
 * Evaluate models using accuracy and loss metrics
 * Enable real-time prediction for new images
 
-## 🧠 Technologies Used
+##  Technologies Used
 
 * Python
 * TensorFlow & Keras
